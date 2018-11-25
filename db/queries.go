@@ -1,11 +1,11 @@
 package db
 
 import (
+	"github.com/noilpa/rest/utils"
 	"errors"
 	"fmt"
 	_ "github.com/lib/pq"
 	"golang.org/x/crypto/bcrypt"
-	"restreamTestCase/utils"
 	"strings"
 )
 
@@ -27,7 +27,6 @@ func Films(size, offset uint, date, genre string) ([]utils.Film, error) {
 		return nil, err
 	}
 
-	fmt.Println("SQL: SELECT * FROM films", conditions)
 	query := fmt.Sprintf("SELECT * FROM films %s", conditions)
 	rows, err := DB.Query(query)
 	if err != nil {
@@ -39,7 +38,7 @@ func Films(size, offset uint, date, genre string) ([]utils.Film, error) {
 	for rows.Next() {
 		var f utils.Film
 		err := rows.Scan(&f.Id, &f.Name, &f.Date, &f.Genre)
-		// todo: format time.Time type to YYYY-MM-DD
+
 		if err != nil {
 			// if we scan corrupted row
 			fmt.Println(err)
@@ -117,8 +116,6 @@ func validateDate(date string) bool {
 	if len(tokens) == 3 {
 		return true
 	}
-
-	// todo: check DD, MM, YYYY values
 
 	fmt.Println("Expected YYYY-MM-DD, received", date)
 	return false

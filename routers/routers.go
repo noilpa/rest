@@ -1,22 +1,20 @@
 package routers
 
 import (
+	"github.com/noilpa/rest/handles"
 	"github.com/gorilla/mux"
-	"restreamTestCase/handles"
 )
 
 func InitRouter() *mux.Router {
 
 	r := mux.NewRouter()
-	addHandles(r)
+	addHandlers(r)
 	return r
 
 }
 
 
-func addHandles(r *mux.Router) {
-
-	r.Handle("/", handles.NotImplemented).Methods("GET")
+func addHandlers(r *mux.Router) {
 
 	// PUBLIC API
 

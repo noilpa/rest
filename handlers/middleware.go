@@ -1,11 +1,11 @@
-package handles
+package handlers
 
 import (
+	"github.com/noilpa/rest/utils"
 	"errors"
 	"fmt"
 	"github.com/dgrijalva/jwt-go"
 	"net/http"
-	"restreamTestCase/utils"
 	"strings"
 	"time"
 )

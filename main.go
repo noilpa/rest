@@ -1,13 +1,13 @@
 package main
 
 import (
+	"github.com/noilpa/rest/db"
+	"github.com/noilpa/rest/routers"
 	"fmt"
 	"github.com/gorilla/handlers"
 	_ "github.com/lib/pq"
 	"net/http"
 	"os"
-	"restreamTestCase/db"
-	"restreamTestCase/routers"
 )
 
 // Entry point

@@ -1,11 +1,11 @@
-package handles
+package handlers
 
 import (
+	"github.com/noilpa/rest/db"
+	"github.com/noilpa/rest/utils"
 	"encoding/json"
 	"fmt"
 	"net/http"
-	"restreamTestCase/db"
-	"restreamTestCase/utils"
 	"strconv"
 )
 
