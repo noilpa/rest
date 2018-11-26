@@ -16,6 +16,7 @@ API (more information about endpoints in ./routers/routers.go)
 PUBLIC
 
 POST /registrations  - save user in system
+
 POST /authorizations - get token for protected api
 
 PROTECTED
