@@ -1,8 +1,9 @@
 package routers
 
 import (
-	"github.com/noilpa/rest/handles"
 	"github.com/gorilla/mux"
+	"github.com/noilpa/rest/handlers"
+	"github.com/noilpa/rest/handles"
 )
 
 func InitRouter() *mux.Router {
@@ -39,7 +40,7 @@ func addHandlers(r *mux.Router) {
 	// name - optional parameter, reference information
  	// age - optional parameter, reference information, format: only digits (12, 56, 89)
 	// phone - optional parameter, reference information, format: only digits (12345, 81234567890)
-	r.Handle("/registrations", handles.Registrations).Methods("POST")
+	r.Handle("/registrations", handlers.Registrations).Methods("POST")
 
 	// handle user authorization requests
 	// Example curl -H "Content-Type: application/json" -d
@@ -53,7 +54,7 @@ func addHandlers(r *mux.Router) {
 	// Parameters
 	// login - must have parameter
 	// password - must have parameter
-	r.Handle("/authorizations", handles.Authorizations).Methods("POST")
+	r.Handle("/authorizations", handlers.Authorizations).Methods("POST")
 
 	// PROTECTED API
 

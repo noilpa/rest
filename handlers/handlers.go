@@ -1,10 +1,10 @@
 package handlers
 
 import (
-	"github.com/noilpa/rest/db"
-	"github.com/noilpa/rest/utils"
 	"encoding/json"
 	"fmt"
+	"github.com/noilpa/rest/db"
+	"github.com/noilpa/rest/utils"
 	"net/http"
 	"strconv"
 )

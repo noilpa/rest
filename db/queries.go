@@ -1,10 +1,10 @@
 package db
 
 import (
-	"github.com/noilpa/rest/utils"
 	"errors"
 	"fmt"
 	_ "github.com/lib/pq"
+	"github.com/noilpa/rest/utils"
 	"golang.org/x/crypto/bcrypt"
 	"strings"
 )

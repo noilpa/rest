@@ -1,10 +1,10 @@
 package handlers
 
 import (
-	"github.com/noilpa/rest/utils"
 	"errors"
 	"fmt"
 	"github.com/dgrijalva/jwt-go"
+	"github.com/noilpa/rest/utils"
 	"net/http"
 	"strings"
 	"time"

@@ -16,9 +16,9 @@ func TestDBConnect(t *testing.T) {
 func TestRegistration(t *testing.T) {
 	data := []byte(`{
 		"user":{
-		"login": "qwe13",
+			"login": "qwe13",
 			"password": "qwe4"
-	},
+		},
 		"name":"billy",
 		"age":69,
 		"phone":"81234567890"

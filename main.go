@@ -1,11 +1,11 @@
 package main
 
 import (
-	"github.com/noilpa/rest/db"
-	"github.com/noilpa/rest/routers"
 	"fmt"
 	"github.com/gorilla/handlers"
 	_ "github.com/lib/pq"
+	"github.com/noilpa/rest/db"
+	"github.com/noilpa/rest/routers"
 	"net/http"
 	"os"
 )
