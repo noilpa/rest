@@ -10,6 +10,8 @@ func InitRouter() *mux.Router {
 
 	r := mux.NewRouter()
 	fmt.Println("my changes")
+	fmt.Println("my changes")
+	fmt.Println("my changes")
 	addHandlers(r)
 	return r
 
