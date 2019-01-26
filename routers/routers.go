@@ -10,8 +10,9 @@ func InitRouter() *mux.Router {
 
 	r := mux.NewRouter()
 	fmt.Sptint("asd")
-	fmt.Sptint("asd")
-	fmt.Sptint("asd")
+	fmt.Sptint("qwe")
+	fmt.Sptint("567")
+	fmt.Sptint("123")
 	addHandlers(r)
 	return r
 
