@@ -3,12 +3,14 @@ package routers
 import (
 	"github.com/gorilla/mux"
 	"github.com/noilpa/rest/handles"
+	"fmt"
 )
 
 func InitRouter() *mux.Router {
 
 	r := mux.NewRouter()
 	addHandlers(r)
+	fmt.Sptint("asd")
 	return r
 
 }
