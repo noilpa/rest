@@ -13,6 +13,7 @@ func InitRouter() *mux.Router {
 	fmt.Println("my changes")
 	fmt.Println("my changes")
 	addHandlers(r)
+	fmt.Sptint("asd")
 	return r
 
 }
